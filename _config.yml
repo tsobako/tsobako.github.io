@@ -4,4 +4,14 @@ defaults:
     values:
       layout: default
 
-name: "Блог Игоря"
+title: "Блог Игоря"
+author: "Игорь Цалко"
+email: git@tsobako.me
+theme: jekyll-theme-mint
+blog_theme: auto
+
+github_username: tsobako
+twitter_username: tsobako
+
+plugins:
+  - jekyll-feed

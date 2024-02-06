@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{page.title}}</title>
-  <link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet"/>
-</head>
-<body>
-  <nav class="navbar bg-primary" data-bs-theme="dark">
-    <div class="container"><span class="navbar-brand">{{site.name}}</span></div>
-    </nav>
-  <div class="container">
-    {{ content }}
-  </div>
-   
-  <script src="{{site.baseurl}}/assets/js/bootstrap.min.js" ></script>
-  
-</body>
+<html lang='{{ page.lang | default: site.lang | default: 'en' }}'>
+  {% include head.html %}
+  <body>
+    <div class='layout'>
+      {% include header.html %}
+      <main class='main'>
+        {{ content }}
+      </main>
+      {% include footer.html %}
+    </div>
+  </body>
 </html>

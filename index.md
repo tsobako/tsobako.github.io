@@ -1,10 +1,3 @@
 ---
-layout: default
-title: "Блог Игоря"
+layout: home
 ---
-
-## Последние посты
-
-{% for post in site.posts limit:10 %}
- - [{{post.title}}]({{post.url}})
-{% endfor %}
