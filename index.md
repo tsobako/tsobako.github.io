@@ -3,6 +3,8 @@ layout: default
 title: "Блог Игоря"
 ---
 
-# Блог Игоря
+## Последние посты
 
-## Возможно скоро здесь будет что-то
+{% for post in site.posts limit:10 %}
+ - [{{post.title}}]({{post.url}})
+{% endfor %}
