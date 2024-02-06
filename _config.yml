@@ -12,6 +12,7 @@ blog_theme: auto
 
 github_username: tsobako
 twitter_username: tsobako
+disqus_shortname: tsobako
 
 plugins:
   - jekyll-feed
