@@ -4,7 +4,7 @@ defaults:
     values:
       layout: default
 
-title: "Блог Игоря"
+title: "Журнал Игоря"
 author: "Игорь Цалко"
 email: git@tsobako.me
 theme: jekyll-theme-mint
