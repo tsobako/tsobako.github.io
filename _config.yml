@@ -6,13 +6,12 @@ defaults:
 
 title: "Журнал Игоря"
 author: "Игорь Цалко"
-email: git@tsobako.me
 theme: jekyll-theme-mint
 blog_theme: auto
 url: http://blog.tsobako.me
 
 github_username: tsobako
-twitter_username: tsobako
+twitter_username: tsobako_int
 disqus_shortname: "blog-tsobako-me"
 
 plugins:
