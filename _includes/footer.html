@@ -27,5 +27,13 @@
         </a>
       </li>
     {% endif %}
+
+    {% if site.mastodon_username %}
+      <li class='footer__item'>
+        <a rel="me" href="https://mastodon.social/@{{ site.mastodon_username}}" title="Mastodon">
+          {% include icon.html icon='mastodon' %}
+        </a>
+      </li>
+    {% endif %}
  </ul>
 </footer>
