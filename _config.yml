@@ -14,5 +14,9 @@ url: http://blog.tsobako.me
 github_username: tsobako
 twitter_username: tsobako_en
 
+exclude:
+  - README.md
+  - publish.sh
+
 plugins:
   - jekyll-feed
