@@ -18,5 +18,7 @@ exclude:
   - README.md
   - publish.sh
 
+include: ['_pages']
+
 plugins:
   - jekyll-feed

@@ -1,11 +1,12 @@
 ---
 layout: default
+permalink: /archive.html
 ---
 
 {% if site.posts.size > 0 %}
 <ul class='posts'>
   {% for post in site.posts %}
-    {% unless post.tags contains "archive" %}
+    {% if post.tags contains "archive" %}
       <li class='posts__item'>
         <time class='posts__date' datetime='{{ post.date | date_to_xmlschema }}'>
           {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
@@ -17,12 +18,7 @@ layout: default
           </a>
         </div>
       </li>
-    {% endunless %}
+    {% endif %}
   {% endfor %}
 </ul>
 {% endif %}
-
-<div class='posts__title'>
-          <a class='posts__link' href='/archive.html'>Архив</a>
-</div>
-

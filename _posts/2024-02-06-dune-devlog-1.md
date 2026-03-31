@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Соединяю Дюну и BF // Devlog #1"
+tags: archive
 ---
 
 Изначально пост был опубликован [здесь](https://dtf.ru/indie/2474902-soedinyayu-dyunu-i-bf-devlog-1).
