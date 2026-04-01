@@ -6,9 +6,7 @@ defaults:
 
 title: "Журнал Игоря"
 author: "Игорь Цалко"
-email: git@tsobako.me
-theme: jekyll-theme-mint
-blog_theme: auto
+email: social@tsobako.me
 url: http://blog.tsobako.me
 
 github_username: tsobako

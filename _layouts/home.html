@@ -3,16 +3,16 @@ layout: default
 ---
 
 {% if site.posts.size > 0 %}
-<ul class='posts'>
+<ul>
   {% for post in site.posts %}
-    {% unless post.tags contains "archive" %}
-      <li class='posts__item'>
-        <time class='posts__date' datetime='{{ post.date | date_to_xmlschema }}'>
+    {% unless (post.tags contains "archive" or post.tags contains "draft")  %}
+      <li>
+        <time datetime='{{ post.date | date_to_xmlschema }}'>
           {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
           {{ post.date | date: date_format }}
         </time>
-        <div class='posts__title'>
-          <a class='posts__link' href='{{ post.url | relative_url }}'>
+        <div>
+          <a href='{{ post.url | relative_url }}'>
             {{ post.title | escape }}
           </a>
         </div>
@@ -20,9 +20,16 @@ layout: default
     {% endunless %}
   {% endfor %}
 </ul>
+{% else %}
+  <p>Пока постов нет</p>
 {% endif %}
 
-<div class='posts__title'>
-          <a class='posts__link' href='/archive.html'>Архив</a>
+
+<div>
+  <a href='/draft.html'>Черновики</a>
+</div>
+
+<div>
+  <a href='/archive.html'>Архив</a>
 </div>
 

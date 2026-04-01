@@ -1,12 +1,12 @@
 ---
 layout: default
-permalink: /archive.html
+permalink: /draft.html
 ---
 
 {% if site.posts.size > 0 %}
 <ul>
   {% for post in site.posts %}
-    {% if post.tags contains "archive" %}
+    {% if post.tags contains "draft" %}
       <li>
         <time datetime='{{ post.date | date_to_xmlschema }}'>
           {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
@@ -21,4 +21,7 @@ permalink: /archive.html
     {% endif %}
   {% endfor %}
 </ul>
+{% else %}
+  <p>Пока постов нет</p>
 {% endif %}
+
