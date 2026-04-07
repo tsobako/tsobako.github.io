@@ -1,12 +1,3 @@
 <header>
-  <h1>{{ site.title | escape }}</h1>
-  <nav>
-    {% assign site_pages = site.pages | where_exp: 'page', 'page.is_footer != true' %}
-
-    {% for site_page in site_pages %}
-      {% if site_page.title %}
-        <a href='{{ site_page.url | relative_url }}'>{{ site_page.title | escape }}</a>
-      {% endif %}
-    {% endfor %}
-  </nav>
+  <h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
 </header>

@@ -4,21 +4,26 @@ permalink: /archive.html
 ---
 
 {% if site.posts.size > 0 %}
-<ul>
+<table>
+  <tr>
+    <th>Дата</th><th>Ссылка</th>
+  </tr>
   {% for post in site.posts %}
     {% if post.tags contains "archive" %}
-      <li>
+      <tr>
+        <td>
         <time datetime='{{ post.date | date_to_xmlschema }}'>
           {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
           {{ post.date | date: date_format }}
         </time>
-        <div>
+        </td>
+        <td>
           <a href='{{ post.url | relative_url }}'>
             {{ post.title | escape }}
           </a>
-        </div>
-      </li>
+        </td>
+      </tr>
     {% endif %}
   {% endfor %}
-</ul>
+</table>
 {% endif %}
