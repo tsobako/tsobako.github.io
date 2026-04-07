@@ -52,4 +52,4 @@ tags: archive
 
 Здесь я тестирую посадку пехотинца в транспорт, управление транспортом и столковение транспорта с препятствиями (горами).
 
-[Видео](https://leonardo.osnova.io/628a1d1f-2731-5a66-9389-fe5ef0fb885b/-/format/mp4/)
+<video controls src="https://leonardo.osnova.io/628a1d1f-2731-5a66-9389-fe5ef0fb885b/-/format/mp4/"></video>
