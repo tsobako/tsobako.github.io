@@ -14,7 +14,7 @@ config :web_dev_utils, :reload_log, true
 config :tableau, :assets, []
 
 config :tableau, :config,
-  url: "http://localhost:4999",
+  url: "http://localhost:4000",
   markdown: [
     mdex: [
       extension: [
