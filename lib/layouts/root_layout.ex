@@ -32,7 +32,8 @@ defmodule Blog.RootLayout do
             <ul>
               <li><a href="mailto:social@tsobako.me">Почта</a></li>
               <li><a href="https://github.com/tsobako">Github</a></li>
-              <li><a href="https://x.com/tsobako_en">X</a></li>
+              <li><a href="https://x.com/tsobako">X на русском</a></li>
+              <li><a href="https://x.com/tsobako_en">X на английском</a></li>
             </ul>
 
           </footer>
