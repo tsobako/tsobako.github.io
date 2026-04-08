@@ -33,7 +33,6 @@ defmodule Mix.Tasks.Blog.Gen.Post do
     layout: Blog.PostLayout
     title: \"#{post_title}\"
     date: #{post_date} #{post_time}
-    permalink: /:title/
     ---
     """
 
