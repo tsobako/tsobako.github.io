@@ -45,8 +45,8 @@ config :tableau, Tableau.SitemapExtension, enabled: true
 
 config :tableau, Tableau.RSSExtension,
   enabled: true,
-  title: "blog",
-  description: "Блог Игоря"
+  title: "Журнал Игоря",
+  description: "Блог, где я пишу всякое"
 
 config :elixir, :time_zone_database, Tz.TimeZoneDatabase
 
